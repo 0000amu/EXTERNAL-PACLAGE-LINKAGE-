@@ -1,4 +1,4 @@
-name: Github external library
+name: quality gateway implementation
 
 on:
   push:
@@ -13,8 +13,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install requirements
-        run: pip install pandas
-
-      - name: Run Python
-        run: python data.py
+      - name: Run test code
+        run: pytest --cov=calci --cov-report=term

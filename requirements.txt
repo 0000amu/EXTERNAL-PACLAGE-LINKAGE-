@@ -1,0 +1,5 @@
+Pandas
+request
+streamlit
+pytest
+pytest-cov
